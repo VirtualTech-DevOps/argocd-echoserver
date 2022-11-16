@@ -15,3 +15,5 @@ spec:
     namespace: echoserver
   syncPolicy:
     automated: {}
+    syncOptions:
+      - CreateNamespace=true
