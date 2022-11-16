@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: echoserver
+spec:
+  project: default
+  source:
+    chart: helm-echoserver
+    repoURL: https://VirtualTech-DevOps.github.io/helm-echoserver
+    targetRevision: 0.2.0
+    helm:
+      releaseName: echoserver
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: echoserver
+  syncPolicy:
+    automated: {}
