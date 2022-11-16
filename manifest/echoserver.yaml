@@ -13,5 +13,3 @@ spec:
   destination:
     server: "https://kubernetes.default.svc"
     namespace: echoserver
-  syncPolicy:
-    automated: {}
