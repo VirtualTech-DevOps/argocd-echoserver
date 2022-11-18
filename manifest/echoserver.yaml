@@ -7,7 +7,7 @@ spec:
   source:
     chart: helm-echoserver
     repoURL: https://VirtualTech-DevOps.github.io/helm-echoserver
-    targetRevision: 0.5.0
+    targetRevision: 0.6.0
     helm:
       releaseName: echoserver
   destination:
